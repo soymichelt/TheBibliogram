@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bf4a8b35-675d-4333-9ba2-1fd254fe6919" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5587/Otros/PaisServicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PaisServicio1.wsdl" MetadataType="Wsdl" ID="f58b90f2-5b32-41bc-94cd-e5f2ff5ce2f5" SourceId="1" SourceUrl="http://localhost:5587/Otros/PaisServicio.svc?wsdl" />
+    <MetadataFile FileName="PaisServicio2.xsd" MetadataType="Schema" ID="b8051789-bdf8-460a-911f-97c8c176b0d4" SourceId="1" SourceUrl="http://localhost:5587/Otros/PaisServicio.svc?xsd=xsd2" />
+    <MetadataFile FileName="PaisServicio21.xsd" MetadataType="Schema" ID="99d9265e-c49d-44a7-a018-402a8e9dd367" SourceId="1" SourceUrl="http://localhost:5587/Otros/PaisServicio.svc?xsd=xsd1" />
+    <MetadataFile FileName="PaisServicio22.xsd" MetadataType="Schema" ID="e8d3d46b-f75b-4784-871b-03ce9bbc38df" SourceId="1" SourceUrl="http://localhost:5587/Otros/PaisServicio.svc?xsd=xsd0" />
+    <MetadataFile FileName="PaisServicio1.disco" MetadataType="Disco" ID="edb893eb-f30f-4ffa-8a12-3097b1e36f36" SourceId="1" SourceUrl="http://localhost:5587/Otros/PaisServicio.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

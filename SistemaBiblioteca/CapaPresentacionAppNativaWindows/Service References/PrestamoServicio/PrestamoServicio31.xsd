@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ServiciosWeb" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:5587/Prestamo/PrestamoServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="DPrestamo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Carrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Departamento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartamentoAcademicoDocente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartamentoAcademicoEstudiante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Edad" type="xs:int" />
+      <xs:element minOccurs="0" name="FechaPrestamo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdPersona" type="ser:guid" />
+      <xs:element minOccurs="0" name="IdPrestamo" type="ser:guid" />
+      <xs:element minOccurs="0" name="Identificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Municipio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="N" type="xs:long" />
+      <xs:element minOccurs="0" name="NCarnet" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombrePersona" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Observacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sexo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoIdentificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoPersona" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Turno" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DPrestamo" nillable="true" type="tns:DPrestamo" />
+  <xs:complexType name="ArrayOfDInventario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DInventario" nillable="true" type="tns:DInventario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDInventario" nillable="true" type="tns:ArrayOfDInventario" />
+  <xs:complexType name="DInventario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Autor1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Autor2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Autor3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Edicion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Editor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdAdquisicion" type="ser:guid" />
+      <xs:element minOccurs="0" name="IdInventario" type="ser:guid" />
+      <xs:element minOccurs="0" name="IdLibro" type="ser:guid" />
+      <xs:element minOccurs="0" name="Idioma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Institucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Isbn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OtroTitulo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Prestado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Registro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Signatura" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DInventario" nillable="true" type="tns:DInventario" />
+  <xs:complexType name="ArrayOfDPrestamo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DPrestamo" nillable="true" type="tns:DPrestamo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDPrestamo" nillable="true" type="tns:ArrayOfDPrestamo" />
+  <xs:complexType name="ArrayOfDDetallePrestamo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DDetallePrestamo" nillable="true" type="tns:DDetallePrestamo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDDetallePrestamo" nillable="true" type="tns:ArrayOfDDetallePrestamo" />
+  <xs:complexType name="DDetallePrestamo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Autor1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Autor2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Autor3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Edicion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Editor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdDetallePrestamo" type="ser:guid" />
+      <xs:element minOccurs="0" name="IdInventario" type="ser:guid" />
+      <xs:element minOccurs="0" name="IdPrestamo" type="ser:guid" />
+      <xs:element minOccurs="0" name="Idioma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Institucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Isbn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OtroTitulo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Registro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Signatura" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DDetallePrestamo" nillable="true" type="tns:DDetallePrestamo" />
+</xs:schema>

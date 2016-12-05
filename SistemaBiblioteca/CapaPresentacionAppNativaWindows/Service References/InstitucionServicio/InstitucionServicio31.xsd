@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ServiciosWeb" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:5587/Catalogacion/InstitucionServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="DInstitucion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdInstitucion" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DInstitucion" nillable="true" type="tns:DInstitucion" />
+  <xs:complexType name="ArrayOfDInstitucion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DInstitucion" nillable="true" type="tns:DInstitucion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDInstitucion" nillable="true" type="tns:ArrayOfDInstitucion" />
+</xs:schema>

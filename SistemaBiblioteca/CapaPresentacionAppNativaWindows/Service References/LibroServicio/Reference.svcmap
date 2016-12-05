@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3f96e908-27f5-49fd-8f9a-d5e28d89115c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5587/Catalogacion/LibroServicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LibroServicio3.xsd" MetadataType="Schema" ID="a19b506e-e458-461f-b55a-3f07de083e32" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/LibroServicio.svc?xsd=xsd2" />
+    <MetadataFile FileName="LibroServicio31.xsd" MetadataType="Schema" ID="d4c71f98-00b2-4c97-86ff-7b40f5fe5d3c" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/LibroServicio.svc?xsd=xsd1" />
+    <MetadataFile FileName="LibroServicio32.xsd" MetadataType="Schema" ID="d6185aab-8580-4a69-b1aa-f39f3c9ba00d" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/LibroServicio.svc?xsd=xsd0" />
+    <MetadataFile FileName="LibroServicio1.wsdl" MetadataType="Wsdl" ID="96701743-7b95-4045-973d-e651aeb4863e" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/LibroServicio.svc?wsdl" />
+    <MetadataFile FileName="LibroServicio1.disco" MetadataType="Disco" ID="7681fe5b-7a6f-4979-a9eb-63afedfbfdc0" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/LibroServicio.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

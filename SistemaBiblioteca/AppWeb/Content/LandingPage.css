@@ -1,0 +1,122 @@
+﻿body {
+    padding-top:50px;
+    padding-bottom:50px;
+    background:#EAEDE9;
+}
+.photo-front {
+    margin-bottom:0px;
+    background:url(../Images/photo-theme1.jpg) no-repeat;
+    background-size:100%;
+    color:#fff;
+    text-shadow:1px 2px 5px #000000;
+}
+    .band-theme div {
+        height:3px;
+    }
+    .band-theme .b {
+        background-color:#4387F7;
+    }
+    .band-theme .r {
+        background-color:#EA4335;
+    }
+    .band-theme .y {
+        background-color:#FEBF05;
+    }
+    .band-theme .g {
+        background-color:#34A953;
+    }
+.btn-flat-default {
+    border:1px solid #ffffff;
+    background-color:transparent;
+    color:#ffffff;
+
+    /*ANIMACION*/
+    /* Firefox */
+    -moz-transition-property: all;
+    -moz-transition-duration: 0.2s;
+    -moz-transition-timing-function: ease;
+    -moz-transition-delay: 0.2s;
+ 
+ 
+    /* Chrome / Safari */
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease;
+    -webkit-transition-delay: 0.2s;
+ 
+ 
+    /* Opera */
+    -o-transition-property: all;
+    -o-transition-duration: 0.2s;
+    -o-transition-timing-function: ease;
+    -o-transition-delay: 0.2s;
+ 
+ 
+    /* Default */
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+}
+    .btn-flat-default:hover, .btn-flat-default:focus {
+        background-color:rgba(255,255,255,0.2);
+        border-color:#ffffff;
+        color:#ffffff;
+    }
+
+.btn-flat-green {
+    border:1px solid #00a65a;
+    background-color:transparent;
+    color:#00a65a;
+
+    /*ANIMACION*/
+    /* Firefox */
+    -moz-transition-property: all;
+    -moz-transition-duration: 0.2s;
+    -moz-transition-timing-function: ease;
+    -moz-transition-delay: 0.2s;
+ 
+ 
+    /* Chrome / Safari */
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease;
+    -webkit-transition-delay: 0.2s;
+ 
+ 
+    /* Opera */
+    -o-transition-property: all;
+    -o-transition-duration: 0.2s;
+    -o-transition-timing-function: ease;
+    -o-transition-delay: 0.2s;
+ 
+ 
+    /* Default */
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+}
+    .btn-flat-green:hover, .btn-flat-default:focus {
+        background-color:rgba(0, 166, 90,0.8);
+        border-color:#00a65a;
+        color:#fff;
+    }
+
+.jumbotron .title {
+    /*font-size:50px;*/
+    /*color:#b0b0b0;*/
+}
+
+.img-center {
+    margin:0 auto;
+}
+
+.px20 {
+    padding-bottom:20px;
+}
+
+.subtitle {
+    margin-top:0px;
+    color:#a5ceb0;
+}

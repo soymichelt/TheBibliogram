@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:5587/Catalogacion/LibroServicio.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" />
+  <xs:import schemaLocation="http://localhost:5587/Catalogacion/LibroServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="Guardar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="Libro" nillable="true" type="q1:DLibro" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="Encabezados" nillable="true" type="q2:ArrayOfDDetalle_Encabezado" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="Copias" nillable="true" type="q3:ArrayOfDInventario" />
+        <xs:element minOccurs="0" name="Imagen" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GuardarResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Detalle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="IdLibro" type="q4:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DetalleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="DetalleResult" nillable="true" type="q5:DLibro" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Editar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="libro" nillable="true" type="q6:DLibro" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="Encabezados" nillable="true" type="q7:ArrayOfDDetalle_Encabezado" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="Copias" nillable="true" type="q8:ArrayOfDInventario" />
+        <xs:element minOccurs="0" name="Imagen" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EditarResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="IdLibro" type="q9:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EliminarResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="IdLibro" type="q10:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="BuscarIdResult" nillable="true" type="q11:DLibro" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarSigTop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SignaturaTopografica" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarSigTopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="BuscarSigTopResult" nillable="true" type="q12:DLibro" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Lista">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="ListaResult" nillable="true" type="q13:ArrayOfDLibro" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Busqueda">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="Libro" nillable="true" type="q14:DLibro" />
+        <xs:element minOccurs="0" name="Encabezado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BusquedaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="BusquedaResult" nillable="true" type="q15:ArrayOfDLibro" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarEncabezadoPorLibro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="IdLibro" type="q16:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarEncabezadoPorLibroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="BuscarEncabezadoPorLibroResult" nillable="true" type="q17:ArrayOfDEncabezado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarCopiaPorLibro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="IdLibro" type="q18:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarCopiaPorLibroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="BuscarCopiaPorLibroResult" nillable="true" type="q19:ArrayOfDInventario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarImagen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarImagenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BuscarImagenResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

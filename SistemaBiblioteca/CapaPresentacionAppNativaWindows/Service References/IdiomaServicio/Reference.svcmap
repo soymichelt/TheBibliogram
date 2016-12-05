@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4b15dcb8-83dc-44bf-bf34-6e484db16802" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5587/Catalogacion/IdiomaServicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IdiomaServicio3.xsd" MetadataType="Schema" ID="404f8bfa-cdee-4f7d-bf49-b6196b0da235" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/IdiomaServicio.svc?xsd=xsd1" />
+    <MetadataFile FileName="IdiomaServicio31.xsd" MetadataType="Schema" ID="aced09a4-7721-4ce2-8ade-3f282ce4d23f" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/IdiomaServicio.svc?xsd=xsd0" />
+    <MetadataFile FileName="IdiomaServicio1.disco" MetadataType="Disco" ID="6f11991d-d0be-47bf-b3a0-9ce952202e37" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/IdiomaServicio.svc?disco" />
+    <MetadataFile FileName="IdiomaServicio1.wsdl" MetadataType="Wsdl" ID="702bea94-f1d0-4e81-b7e0-da9b79b237fd" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/IdiomaServicio.svc?wsdl" />
+    <MetadataFile FileName="IdiomaServicio32.xsd" MetadataType="Schema" ID="9e1d459a-ab79-41b5-a585-a922110dcac3" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/IdiomaServicio.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

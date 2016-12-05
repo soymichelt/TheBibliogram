@@ -1,0 +1,111 @@
+﻿/*BUSQUEDAS*/
+.body {
+    margin-top:20px;
+}
+.search {
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color:#FAFAFA;
+}
+
+.img-result {
+    border-radius:10px;
+}
+
+.info-book h4 {
+    font-family:Arial;
+    font-size:16px;
+    font-weight:500;
+}
+
+.info-book .SubTitle {
+    color:#999;
+    font-size:14px;
+}
+.info-book {
+    color:#808080;
+}
+.info-book, .info-book .attrib {
+    font-size:10px;
+}
+    .info-book .attrib, .info-book .attrib a {
+        color:#66757f;
+    }
+.footer-result {
+    /*background-color:#546E7A;*/
+}
+    .footer-result .Fav {
+        font-size:20px;
+        color:#AAB8C2;
+    }
+    .footer-result .Fav-Pressed {
+        color:#E2264D;
+    }
+    .footer-result .Fav-Cont {
+        font-size:11px;
+        line-height:20px;
+    }
+        .footer-result .Fav-Cont a {
+            color:#34A953;
+            text-decoration:none;
+        }
+/*FIN DE BUSQUEDAS*/
+
+/*CITA*/
+.cita {
+    font-style:italic;
+}
+.com-open, .com-close {
+    
+}
+/*FIN DE CITA*/
+
+/*usuario*/
+.img-profile-result {
+    width:48px;
+    border-radius:100%;
+}
+.name-profile-result {
+    vertical-align:middle;
+}
+.profile-name-result {
+    padding-bottom:0px;
+    margin-bottom:0px;
+    font-weight:100;
+    font-family:'League Gothic';
+    /*font-size:25px;*/
+}
+    .profile-name-result a {
+        color:#00a65a;
+    }
+.profile-info-result, .profile-info-result a {
+    color:#66757f;
+    font-size:10px;
+}
+.name-profile-result .btn {
+    background-color:transparent;
+    border:none;
+}
+/*fin usuario*/
+
+.r-search {
+    margin-bottom:20px;
+}
+
+.books {
+    padding:20px 15px;
+    background-color:#fff;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.20), 0 2px 10px 0 rgba(0,0,0,0.16);
+
+    /*-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.4) !important;
+    -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.4) !important;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.4) !important;*/
+
+    /*border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;*/
+    border-radius: 2px;
+
+}
+    /*.r-search .media .media-left {
+        vertical-align:middle;
+    }*/

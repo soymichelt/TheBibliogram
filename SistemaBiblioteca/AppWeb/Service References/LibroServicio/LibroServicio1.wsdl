@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LibroServicio" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:5587/Catalogacion/LibroServicio.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:5587/Catalogacion/LibroServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:5587/Catalogacion/LibroServicio.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILibroServicio_Guardar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Guardar" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_Guardar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_Detalle_InputMessage">
+    <wsdl:part name="parameters" element="tns:Detalle" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_Detalle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_Editar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Editar" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_Editar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_Eliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Eliminar" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_Eliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_BuscarId_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarId" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_BuscarId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_BuscarSigTop_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarSigTop" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_BuscarSigTop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarSigTopResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_Lista_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_Lista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_Busqueda_InputMessage">
+    <wsdl:part name="parameters" element="tns:Busqueda" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_Busqueda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BusquedaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_BuscarEncabezadoPorLibro_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarEncabezadoPorLibro" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_BuscarEncabezadoPorLibro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarEncabezadoPorLibroResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_BuscarCopiaPorLibro_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarCopiaPorLibro" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_BuscarCopiaPorLibro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarCopiaPorLibroResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_BuscarImagen_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarImagen" />
+  </wsdl:message>
+  <wsdl:message name="ILibroServicio_BuscarImagen_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarImagenResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILibroServicio">
+    <wsdl:operation name="Guardar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibroServicio/Guardar" message="tns:ILibroServicio_Guardar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibroServicio/GuardarResponse" message="tns:ILibroServicio_Guardar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Detalle">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibroServicio/Detalle" message="tns:ILibroServicio_Detalle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibroServicio/DetalleResponse" message="tns:ILibroServicio_Detalle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Editar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibroServicio/Editar" message="tns:ILibroServicio_Editar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibroServicio/EditarResponse" message="tns:ILibroServicio_Editar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibroServicio/Eliminar" message="tns:ILibroServicio_Eliminar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibroServicio/EliminarResponse" message="tns:ILibroServicio_Eliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibroServicio/BuscarId" message="tns:ILibroServicio_BuscarId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibroServicio/BuscarIdResponse" message="tns:ILibroServicio_BuscarId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarSigTop">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibroServicio/BuscarSigTop" message="tns:ILibroServicio_BuscarSigTop_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibroServicio/BuscarSigTopResponse" message="tns:ILibroServicio_BuscarSigTop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibroServicio/Lista" message="tns:ILibroServicio_Lista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibroServicio/ListaResponse" message="tns:ILibroServicio_Lista_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Busqueda">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibroServicio/Busqueda" message="tns:ILibroServicio_Busqueda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibroServicio/BusquedaResponse" message="tns:ILibroServicio_Busqueda_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEncabezadoPorLibro">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibroServicio/BuscarEncabezadoPorLibro" message="tns:ILibroServicio_BuscarEncabezadoPorLibro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibroServicio/BuscarEncabezadoPorLibroResponse" message="tns:ILibroServicio_BuscarEncabezadoPorLibro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarCopiaPorLibro">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibroServicio/BuscarCopiaPorLibro" message="tns:ILibroServicio_BuscarCopiaPorLibro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibroServicio/BuscarCopiaPorLibroResponse" message="tns:ILibroServicio_BuscarCopiaPorLibro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarImagen">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibroServicio/BuscarImagen" message="tns:ILibroServicio_BuscarImagen_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibroServicio/BuscarImagenResponse" message="tns:ILibroServicio_BuscarImagen_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILibroServicio" type="tns:ILibroServicio">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Guardar">
+      <soap:operation soapAction="http://tempuri.org/ILibroServicio/Guardar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Detalle">
+      <soap:operation soapAction="http://tempuri.org/ILibroServicio/Detalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Editar">
+      <soap:operation soapAction="http://tempuri.org/ILibroServicio/Editar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar">
+      <soap:operation soapAction="http://tempuri.org/ILibroServicio/Eliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarId">
+      <soap:operation soapAction="http://tempuri.org/ILibroServicio/BuscarId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarSigTop">
+      <soap:operation soapAction="http://tempuri.org/ILibroServicio/BuscarSigTop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista">
+      <soap:operation soapAction="http://tempuri.org/ILibroServicio/Lista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Busqueda">
+      <soap:operation soapAction="http://tempuri.org/ILibroServicio/Busqueda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEncabezadoPorLibro">
+      <soap:operation soapAction="http://tempuri.org/ILibroServicio/BuscarEncabezadoPorLibro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarCopiaPorLibro">
+      <soap:operation soapAction="http://tempuri.org/ILibroServicio/BuscarCopiaPorLibro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarImagen">
+      <soap:operation soapAction="http://tempuri.org/ILibroServicio/BuscarImagen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LibroServicio">
+    <wsdl:port name="BasicHttpBinding_ILibroServicio" binding="tns:BasicHttpBinding_ILibroServicio">
+      <soap:address location="http://localhost:5587/Catalogacion/LibroServicio.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

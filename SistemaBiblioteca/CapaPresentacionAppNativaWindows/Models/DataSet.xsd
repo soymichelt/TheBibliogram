@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet" msprop:Generator_UserDSName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtListadoRecomendacion" msprop:Generator_TableClassName="dtListadoRecomendacionDataTable" msprop:Generator_TableVarName="tabledtListadoRecomendacion" msprop:Generator_TablePropName="dtListadoRecomendacion" msprop:Generator_RowDeletingName="dtListadoRecomendacionRowDeleting" msprop:Generator_RowChangingName="dtListadoRecomendacionRowChanging" msprop:Generator_RowEvHandlerName="dtListadoRecomendacionRowChangeEventHandler" msprop:Generator_RowDeletedName="dtListadoRecomendacionRowDeleted" msprop:Generator_UserTableName="dtListadoRecomendacion" msprop:Generator_RowChangedName="dtListadoRecomendacionRowChanged" msprop:Generator_RowEvArgName="dtListadoRecomendacionRowChangeEvent" msprop:Generator_RowClassName="dtListadoRecomendacionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdRecomendacion" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnIdRecomendacion" msprop:Generator_ColumnPropNameInRow="IdRecomendacion" msprop:Generator_ColumnPropNameInTable="IdRecomendacionColumn" msprop:Generator_UserColumnName="IdRecomendacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaReg" msprop:Generator_ColumnVarNameInTable="columnFechaReg" msprop:Generator_ColumnPropNameInRow="FechaReg" msprop:Generator_ColumnPropNameInTable="FechaRegColumn" msprop:Generator_UserColumnName="FechaReg" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaMod" msprop:Generator_ColumnVarNameInTable="columnFechaMod" msprop:Generator_ColumnPropNameInRow="FechaMod" msprop:Generator_ColumnPropNameInTable="FechaModColumn" msprop:Generator_UserColumnName="FechaMod" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdUsuario" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnIdUsuario" msprop:Generator_ColumnPropNameInRow="IdUsuario" msprop:Generator_ColumnPropNameInTable="IdUsuarioColumn" msprop:Generator_UserColumnName="IdUsuario" type="xs:string" minOccurs="0" />
+              <xs:element name="Usuario" msprop:Generator_ColumnVarNameInTable="columnUsuario" msprop:Generator_ColumnPropNameInRow="Usuario" msprop:Generator_ColumnPropNameInTable="UsuarioColumn" msprop:Generator_UserColumnName="Usuario" type="xs:string" minOccurs="0" />
+              <xs:element name="AreaDirigida" msprop:Generator_ColumnVarNameInTable="columnAreaDirigida" msprop:Generator_ColumnPropNameInRow="AreaDirigida" msprop:Generator_ColumnPropNameInTable="AreaDirigidaColumn" msprop:Generator_UserColumnName="AreaDirigida" type="xs:string" minOccurs="0" />
+              <xs:element name="Titulo" msprop:Generator_ColumnVarNameInTable="columnTitulo" msprop:Generator_ColumnPropNameInRow="Titulo" msprop:Generator_ColumnPropNameInTable="TituloColumn" msprop:Generator_UserColumnName="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="OtroTitulo" msprop:Generator_ColumnVarNameInTable="columnOtroTitulo" msprop:Generator_ColumnPropNameInRow="OtroTitulo" msprop:Generator_ColumnPropNameInTable="OtroTituloColumn" msprop:Generator_UserColumnName="OtroTitulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Autores" msprop:Generator_ColumnVarNameInTable="columnAutores" msprop:Generator_ColumnPropNameInRow="Autores" msprop:Generator_ColumnPropNameInTable="AutoresColumn" msprop:Generator_UserColumnName="Autores" type="xs:string" minOccurs="0" />
+              <xs:element name="Isbn" msprop:Generator_ColumnVarNameInTable="columnIsbn" msprop:Generator_ColumnPropNameInRow="Isbn" msprop:Generator_ColumnPropNameInTable="IsbnColumn" msprop:Generator_UserColumnName="Isbn" type="xs:string" minOccurs="0" />
+              <xs:element name="Volumen" msprop:Generator_ColumnVarNameInTable="columnVolumen" msprop:Generator_ColumnPropNameInRow="Volumen" msprop:Generator_ColumnPropNameInTable="VolumenColumn" msprop:Generator_UserColumnName="Volumen" type="xs:string" minOccurs="0" />
+              <xs:element name="Edicion" msprop:Generator_ColumnVarNameInTable="columnEdicion" msprop:Generator_ColumnPropNameInRow="Edicion" msprop:Generator_ColumnPropNameInTable="EdicionColumn" msprop:Generator_UserColumnName="Edicion" type="xs:string" minOccurs="0" />
+              <xs:element name="Nota" msprop:Generator_ColumnVarNameInTable="columnNota" msprop:Generator_ColumnPropNameInRow="Nota" msprop:Generator_ColumnPropNameInTable="NotaColumn" msprop:Generator_UserColumnName="Nota" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ServiciosWeb" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:5587/Recomendacion/RecomendacionServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="DRecomendacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AreaDirigida" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Autores" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Edicion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaMod" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaReg" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdRecomendacion" type="ser:guid" />
+      <xs:element minOccurs="0" name="IdUsuario" type="ser:guid" />
+      <xs:element minOccurs="0" name="Isbn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nota" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OtroTitulo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Volumen" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DRecomendacion" nillable="true" type="tns:DRecomendacion" />
+  <xs:complexType name="ArrayOfDCantidadMensual">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DCantidadMensual" nillable="true" type="tns:DCantidadMensual" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDCantidadMensual" nillable="true" type="tns:ArrayOfDCantidadMensual" />
+  <xs:complexType name="DCantidadMensual">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cantidad" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Mes" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DCantidadMensual" nillable="true" type="tns:DCantidadMensual" />
+  <xs:complexType name="ArrayOfDRecomendacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DRecomendacion" nillable="true" type="tns:DRecomendacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDRecomendacion" nillable="true" type="tns:ArrayOfDRecomendacion" />
+</xs:schema>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PersonaServicio" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:5587/Otros/PersonaServicio.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:5587/Otros/PersonaServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:5587/Otros/PersonaServicio.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPersonaServicio_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_Guardar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Guardar" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_Guardar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_Editar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Editar" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_Editar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_Eliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Eliminar" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_Eliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_Lista_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_Lista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_Filtrar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Filtrar" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_Filtrar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FiltrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_BuscarPorCarnet_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPorCarnet" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_BuscarPorCarnet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPorCarnetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_BuscarPorIdentificacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPorIdentificacion" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_BuscarPorIdentificacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPorIdentificacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_Busqueda_InputMessage">
+    <wsdl:part name="parameters" element="tns:Busqueda" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_Busqueda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BusquedaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_BuscarPorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPorId" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_BuscarPorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_BuscarPorCarnetOIdentificacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPorCarnetOIdentificacion" />
+  </wsdl:message>
+  <wsdl:message name="IPersonaServicio_BuscarPorCarnetOIdentificacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPorCarnetOIdentificacionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPersonaServicio">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonaServicio/DoWork" message="tns:IPersonaServicio_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonaServicio/DoWorkResponse" message="tns:IPersonaServicio_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Guardar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonaServicio/Guardar" message="tns:IPersonaServicio_Guardar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonaServicio/GuardarResponse" message="tns:IPersonaServicio_Guardar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Editar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonaServicio/Editar" message="tns:IPersonaServicio_Editar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonaServicio/EditarResponse" message="tns:IPersonaServicio_Editar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonaServicio/Eliminar" message="tns:IPersonaServicio_Eliminar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonaServicio/EliminarResponse" message="tns:IPersonaServicio_Eliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonaServicio/Lista" message="tns:IPersonaServicio_Lista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonaServicio/ListaResponse" message="tns:IPersonaServicio_Lista_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Filtrar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonaServicio/Filtrar" message="tns:IPersonaServicio_Filtrar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonaServicio/FiltrarResponse" message="tns:IPersonaServicio_Filtrar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPorCarnet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonaServicio/BuscarPorCarnet" message="tns:IPersonaServicio_BuscarPorCarnet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonaServicio/BuscarPorCarnetResponse" message="tns:IPersonaServicio_BuscarPorCarnet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPorIdentificacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonaServicio/BuscarPorIdentificacion" message="tns:IPersonaServicio_BuscarPorIdentificacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonaServicio/BuscarPorIdentificacionResponse" message="tns:IPersonaServicio_BuscarPorIdentificacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Busqueda">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonaServicio/Busqueda" message="tns:IPersonaServicio_Busqueda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonaServicio/BusquedaResponse" message="tns:IPersonaServicio_Busqueda_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonaServicio/BuscarPorId" message="tns:IPersonaServicio_BuscarPorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonaServicio/BuscarPorIdResponse" message="tns:IPersonaServicio_BuscarPorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPorCarnetOIdentificacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersonaServicio/BuscarPorCarnetOIdentificacion" message="tns:IPersonaServicio_BuscarPorCarnetOIdentificacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersonaServicio/BuscarPorCarnetOIdentificacionResponse" message="tns:IPersonaServicio_BuscarPorCarnetOIdentificacion_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPersonaServicio" type="tns:IPersonaServicio">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IPersonaServicio/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Guardar">
+      <soap:operation soapAction="http://tempuri.org/IPersonaServicio/Guardar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Editar">
+      <soap:operation soapAction="http://tempuri.org/IPersonaServicio/Editar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar">
+      <soap:operation soapAction="http://tempuri.org/IPersonaServicio/Eliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista">
+      <soap:operation soapAction="http://tempuri.org/IPersonaServicio/Lista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Filtrar">
+      <soap:operation soapAction="http://tempuri.org/IPersonaServicio/Filtrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPorCarnet">
+      <soap:operation soapAction="http://tempuri.org/IPersonaServicio/BuscarPorCarnet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPorIdentificacion">
+      <soap:operation soapAction="http://tempuri.org/IPersonaServicio/BuscarPorIdentificacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Busqueda">
+      <soap:operation soapAction="http://tempuri.org/IPersonaServicio/Busqueda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPorId">
+      <soap:operation soapAction="http://tempuri.org/IPersonaServicio/BuscarPorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPorCarnetOIdentificacion">
+      <soap:operation soapAction="http://tempuri.org/IPersonaServicio/BuscarPorCarnetOIdentificacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PersonaServicio">
+    <wsdl:port name="BasicHttpBinding_IPersonaServicio" binding="tns:BasicHttpBinding_IPersonaServicio">
+      <soap:address location="http://localhost:5587/Otros/PersonaServicio.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2193A31A-F3A7-4C29-A5FA-E3175AE07460}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaBiblioteca</RootNamespace>
+    <AssemblyName>SistemaBiblioteca</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Design, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation.Design, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.Instrumentation.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Klik.Windows.Forms.EntryLib.V2.2008, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Klik.Windows.Forms.EntryLib.V2.2008.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BIBLIOGRAFIA\INVENTARIO\frmBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BIBLIOGRAFIA\INVENTARIO\frmBuscar.Designer.cs">
+      <DependentUpon>frmBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BIBLIOGRAFIA\LIBRO\frmGestionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BIBLIOGRAFIA\LIBRO\frmGestionar.Designer.cs">
+      <DependentUpon>frmGestionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios.cs" />
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONAL\VISITANTE\frmBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONAL\VISITANTE\frmBuscar.Designer.cs">
+      <DependentUpon>frmBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONAL\VISITANTE\frmVisitante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONAL\VISITANTE\frmVisitante.Designer.cs">
+      <DependentUpon>frmVisitante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRESTAMO\SALIDA\frmSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESTAMO\SALIDA\frmSalida.Designer.cs">
+      <DependentUpon>frmSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BIBLIOGRAFIA\INVENTARIO\frmBuscar.resx">
+      <DependentUpon>frmBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BIBLIOGRAFIA\LIBRO\frmGestionar.resx">
+      <DependentUpon>frmGestionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONAL\VISITANTE\frmBuscar.resx">
+      <DependentUpon>frmBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONAL\VISITANTE\frmVisitante.resx">
+      <DependentUpon>frmVisitante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESTAMO\SALIDA\frmSalida.resx">
+      <DependentUpon>frmSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="bin\Debug\SistemaBiblioteca.exe.config" />
+    <None Include="bin\Debug\SistemaBiblioteca.vshost.exe.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capadedatos\Capadedatos.csproj">
+      <Project>{c3a46dd9-0884-475f-aa34-24d97fe762cc}</Project>
+      <Name>Capadedatos %28CapaDeDatos\Capadedatos%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Capadedatos.exe" />
+    <Content Include="bin\Debug\Capadedatos.pdb" />
+    <Content Include="bin\Debug\Capadenegocio.exe" />
+    <Content Include="bin\Debug\Capadenegocio.pdb" />
+    <Content Include="bin\Debug\DevComponents.DotNetBar.Design.dll" />
+    <Content Include="bin\Debug\DevComponents.DotNetBar2.dll" />
+    <Content Include="bin\Debug\DevComponents.Instrumentation.Design.dll" />
+    <Content Include="bin\Debug\DevComponents.Instrumentation.dll" />
+    <Content Include="bin\Debug\DevComponents.TreeGX.dll" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <None Include="Resources\Hora.png" />
+    <None Include="Resources\Fecha.png" />
+    <None Include="bin\Debug\Imagenes\Reporte.png" />
+    <None Include="bin\Debug\Imagenes\BorrarFiltro.png" />
+    <None Include="bin\Debug\Imagenes\AplicarFiltro.png" />
+    <None Include="bin\Debug\Imagenes\Tutor.png" />
+    <None Include="bin\Debug\Imagenes\Editor.png" />
+    <None Include="bin\Debug\Imagenes\Visitante.png" />
+    <None Include="bin\Debug\Imagenes\Prestamos.png" />
+    <None Include="bin\Debug\Imagenes\Nuevo.png" />
+    <None Include="bin\Debug\Imagenes\Libro.png" />
+    <None Include="bin\Debug\Imagenes\Institucion.png" />
+    <None Include="bin\Debug\Imagenes\Idioma.png" />
+    <None Include="bin\Debug\Imagenes\Guardar.png" />
+    <None Include="bin\Debug\Imagenes\Grado.png" />
+    <None Include="bin\Debug\Imagenes\Encabezados.png" />
+    <None Include="bin\Debug\Imagenes\Eliminar.png" />
+    <None Include="bin\Debug\Imagenes\Editar.png" />
+    <None Include="bin\Debug\Imagenes\Buscar.png" />
+    <None Include="bin\Debug\Imagenes\Autor.png" />
+    <None Include="bin\Debug\Imagenes\Titulo.png" />
+    <None Include="bin\Debug\Imagenes\Actualizar_16_16.png" />
+    <None Include="bin\Debug\Imagenes\btn_agregar.png" />
+    <None Include="bin\Debug\Imagenes\Cargar_24_24.png" />
+    <None Include="bin\Debug\Imagenes\btn_buscar.png" />
+    <None Include="bin\Debug\Imagenes\Actualizar_24_24.png" />
+    <Content Include="bin\Debug\Klik.Windows.Forms.EntryLib.V2.2008.dll" />
+    <Content Include="bin\Debug\SistemaBiblioteca.exe" />
+    <Content Include="bin\Debug\SistemaBiblioteca.pdb" />
+    <Content Include="bin\Debug\SistemaBiblioteca.vshost.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

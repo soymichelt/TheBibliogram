@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:5587/Catalogacion/InventarioServicio.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" />
+  <xs:import schemaLocation="http://localhost:5587/Catalogacion/InventarioServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="DoWork">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DoWorkResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Guardar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="Inventario" nillable="true" type="q1:DInventario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Editar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="Inventario" nillable="true" type="q2:DInventario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Eliminar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="IdInventario" type="q3:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarPorId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="IdInventario" type="q4:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarPorIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="BuscarPorIdResult" nillable="true" type="q5:DInventario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarPorRegistro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Registro" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarPorRegistroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="BuscarPorRegistroResult" nillable="true" type="q6:DInventario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Busqueda">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="Libro" nillable="true" type="q7:DLibro" />
+        <xs:element minOccurs="0" name="Registro" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BusquedaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="BusquedaResult" nillable="true" type="q8:ArrayOfDInventario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopiasDeLibro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="IdLibro" type="q9:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopiasDeLibroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/ServiciosWeb" minOccurs="0" name="CopiasDeLibroResult" nillable="true" type="q10:ArrayOfDInventario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

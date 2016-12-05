@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bae28fe1-148c-44dc-b511-555f75b5805a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5587/Otros/CarreraServicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CarreraServicio1.disco" MetadataType="Disco" ID="72bb5005-58ac-43bb-bb3e-110400b21a4e" SourceId="1" SourceUrl="http://localhost:5587/Otros/CarreraServicio.svc?disco" />
+    <MetadataFile FileName="CarreraServicio3.xsd" MetadataType="Schema" ID="00b15ecf-bb2b-46cd-9ddc-1a9e7b57310e" SourceId="1" SourceUrl="http://localhost:5587/Otros/CarreraServicio.svc?xsd=xsd1" />
+    <MetadataFile FileName="CarreraServicio31.xsd" MetadataType="Schema" ID="a7dd52e6-5681-43cb-adc1-231bca9f4b57" SourceId="1" SourceUrl="http://localhost:5587/Otros/CarreraServicio.svc?xsd=xsd2" />
+    <MetadataFile FileName="CarreraServicio1.wsdl" MetadataType="Wsdl" ID="de8b2d65-8d1e-44cb-9262-545a55740028" SourceId="1" SourceUrl="http://localhost:5587/Otros/CarreraServicio.svc?wsdl" />
+    <MetadataFile FileName="CarreraServicio32.xsd" MetadataType="Schema" ID="3ab8e63b-81e4-4cf4-ba31-2897ee02271a" SourceId="1" SourceUrl="http://localhost:5587/Otros/CarreraServicio.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

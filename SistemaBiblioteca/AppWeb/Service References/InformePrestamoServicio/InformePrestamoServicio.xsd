@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ServiciosWeb" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfDCantidadMensual3Columnas">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DCantidadMensual3Columnas" nillable="true" type="tns:DCantidadMensual3Columnas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDCantidadMensual3Columnas" nillable="true" type="tns:ArrayOfDCantidadMensual3Columnas" />
+  <xs:complexType name="DCantidadMensual3Columnas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="C1" type="xs:decimal" />
+      <xs:element minOccurs="0" name="C2" type="xs:decimal" />
+      <xs:element minOccurs="0" name="C3" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Mes" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DCantidadMensual3Columnas" nillable="true" type="tns:DCantidadMensual3Columnas" />
+</xs:schema>

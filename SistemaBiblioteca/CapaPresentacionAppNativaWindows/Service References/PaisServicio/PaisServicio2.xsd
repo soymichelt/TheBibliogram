@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ServiciosWeb" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:5587/Otros/PaisServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfDPais">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DPais" nillable="true" type="tns:DPais" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDPais" nillable="true" type="tns:ArrayOfDPais" />
+  <xs:complexType name="DPais">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodPais" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdPais" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DPais" nillable="true" type="tns:DPais" />
+</xs:schema>

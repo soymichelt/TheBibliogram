@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Capadedatos.Models.Adquisicion">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAEAAAAAAgAAAAQBAAAAI=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Institucion">
+    <Position X="5.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACBAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Ciudad">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAQACAAAAAAAAAABAAAAAEAAACAAAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.DetalleEncabezado">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAABAAAAJAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Editor">
+    <Position X="4" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Encabezado">
+    <Position X="5.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Grado">
+    <Position X="0.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAEAAAIAAAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Idioma">
+    <Position X="4" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAABAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Inventario">
+    <Position X="7.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEQAAAAAQAEAAAAAAAAAIAAAAAAAEAgAAABQAAAAAI=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Libro">
+    <Position X="9.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBogA0AoAYIoAAQAQAAAAIyAERUJBAAiAOgAABAQEDE=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.LibroImagen">
+    <Position X="0.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAIAAAAAAAEAgAABQAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Pais">
+    <Position X="2.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAACAAgAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Tutor">
+    <Position X="0.5" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAEAAAAAAAAAAAEAAAAAAAAAQAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Archivo">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAACAAAIABAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Prestamo">
+    <Position X="5.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECAQgAAAAAAAAUAEgEAAAAAAAAgEAgAgQAIEBRAIAAY=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.DetallePrestamo">
+    <Position X="2.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAkAAAEAAABAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Entrega">
+    <Position X="7.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAoAAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.DetalleEntrega">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAABAAAAgAAAAAAAAAEAAABAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Persona">
+    <Position X="4" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EDAAgACAAAIAAUgEkEAAAAAAAAAAAAAgQAIQBxAIAAI=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Carrera">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAgACAAABAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Recomendar">
+    <Position X="7.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhAAAQgAAAAAAAAAAAAAAAAEQQABBAAAAgEAAAAADE=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Usuario">
+    <Position X="2.25" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAYAACAAAAAEgEAAAAABEAAAAgAmABgAAAAAACA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Favorito">
+    <Position X="9.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAIAAEABAAEAAAAAEAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Guardado">
+    <Position X="2.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAIAAAAAAAIAAEAAAAEAAAAAEAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Sesion">
+    <Position X="9.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAEAAAAEAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.Visita">
+    <Position X="4" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAEQAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capadedatos.Models.ContextoBiblioteca">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAwCQIAAAIgEAAgEAAAQAQAEBAAAEAEADoACACAEiI=</HashCode>
+      <FileName>Models\Models.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Calibri" Size="8.25" />
+</ClassDiagram>

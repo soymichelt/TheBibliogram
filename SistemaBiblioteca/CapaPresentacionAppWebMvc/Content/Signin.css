@@ -1,0 +1,48 @@
+﻿html, body{
+	margin:0px;
+    padding: 0px;
+}
+
+#Logo {
+	margin:0 auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	width: 200px;
+}
+
+#Titulo {
+	font-family:"League Gothic";
+}
+
+.form-signin {
+	margin:0 auto;
+	width: 300px;
+}
+
+/*LOGIN*/
+#Login {
+	background: #eee;
+	margin:0 auto;
+	margin-top:150px;
+	width: 350px;
+	padding: 20px 0px 40px 0px;
+
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 400px) {
+    #Login {
+        width: 250px;
+        margin-top:50px;
+    }
+    .form-signin {
+        width:200px;
+    }
+}
+
+
+/*REGISTER*/
+#Name, #c-Name, #LastName, #c-LastName {
+    width: 148px;
+    display: inline-block;
+}

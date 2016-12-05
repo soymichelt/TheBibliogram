@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4ae64121-c37f-4c45-82cf-74d8d38a0e7c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5587/Catalogacion/EditorServicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EditorServicio1.disco" MetadataType="Disco" ID="51fc3a7c-d282-4184-bd08-8c615c1aab4a" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/EditorServicio.svc?disco" />
+    <MetadataFile FileName="EditorServicio31.xsd" MetadataType="Schema" ID="0cef4ccf-f105-4bb8-9bcd-2cc5b671fd58" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/EditorServicio.svc?xsd=xsd0" />
+    <MetadataFile FileName="EditorServicio32.xsd" MetadataType="Schema" ID="56819480-cb7b-4f0f-bb66-8539dacd2906" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/EditorServicio.svc?xsd=xsd2" />
+    <MetadataFile FileName="EditorServicio1.wsdl" MetadataType="Wsdl" ID="3d319cce-1919-4f28-8a72-a606eef27610" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/EditorServicio.svc?wsdl" />
+    <MetadataFile FileName="EditorServicio3.xsd" MetadataType="Schema" ID="2e1a51f7-1138-43ac-80ba-16ed3cd64dcb" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/EditorServicio.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

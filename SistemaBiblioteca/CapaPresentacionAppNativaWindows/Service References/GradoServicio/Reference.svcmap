@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a0f01aaa-9e29-4ee9-b298-27210adac0af" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5587/Catalogacion/GradoServicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GradoServicio1.disco" MetadataType="Disco" ID="0417e973-9dde-4bd7-ab63-28c8a5fc2ec4" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/GradoServicio.svc?disco" />
+    <MetadataFile FileName="GradoServicio1.wsdl" MetadataType="Wsdl" ID="ffe79ef0-b8eb-428b-ae29-4633b8be6371" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/GradoServicio.svc?wsdl" />
+    <MetadataFile FileName="GradoServicio3.xsd" MetadataType="Schema" ID="a849f243-5d62-445e-9a73-0db4781317b2" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/GradoServicio.svc?xsd=xsd1" />
+    <MetadataFile FileName="GradoServicio31.xsd" MetadataType="Schema" ID="fd3e7f01-44f7-4e33-b113-9a62e0184564" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/GradoServicio.svc?xsd=xsd2" />
+    <MetadataFile FileName="GradoServicio32.xsd" MetadataType="Schema" ID="7acfc07b-ae2a-45fa-906d-c5b985bdead6" SourceId="1" SourceUrl="http://localhost:5587/Catalogacion/GradoServicio.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

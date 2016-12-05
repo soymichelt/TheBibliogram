@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ServiciosWeb" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:5587/Otros/PersonaServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="DPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Apellidos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Carrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Departamento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartamentoAcademicoDocente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartamentoAcademicoEstudiante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Domicilio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaUltimaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdCarrera" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="IdCiudad" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="IdPersona" type="ser:guid" />
+      <xs:element minOccurs="0" name="Identificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Municipio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="N" type="xs:long" />
+      <xs:element minOccurs="0" name="NCarnet" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Observacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pais" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sexo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoIdentificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoPersona" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Turno" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DPersona" nillable="true" type="tns:DPersona" />
+  <xs:complexType name="ArrayOfDPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DPersona" nillable="true" type="tns:DPersona" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDPersona" nillable="true" type="tns:ArrayOfDPersona" />
+</xs:schema>

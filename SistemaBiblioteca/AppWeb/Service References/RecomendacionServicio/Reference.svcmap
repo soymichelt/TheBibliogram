@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ba39c050-749a-4555-a455-62537053cbcb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5587/Recomendacion/RecomendacionServicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RecomendacionServicio3.xsd" MetadataType="Schema" ID="6e5f7a78-f52b-4363-aae8-c3aecb1724d5" SourceId="1" SourceUrl="http://localhost:5587/Recomendacion/RecomendacionServicio.svc?xsd=xsd1" />
+    <MetadataFile FileName="RecomendacionServicio31.xsd" MetadataType="Schema" ID="4ff3893d-6012-48a4-801c-f7548f9042fd" SourceId="1" SourceUrl="http://localhost:5587/Recomendacion/RecomendacionServicio.svc?xsd=xsd2" />
+    <MetadataFile FileName="RecomendacionServicio1.disco" MetadataType="Disco" ID="f9a0dd68-1fbc-4421-b99d-e4edd3418001" SourceId="1" SourceUrl="http://localhost:5587/Recomendacion/RecomendacionServicio.svc?disco" />
+    <MetadataFile FileName="RecomendacionServicio32.xsd" MetadataType="Schema" ID="b27d3f05-6970-4867-9c1d-7c8af7448bcc" SourceId="1" SourceUrl="http://localhost:5587/Recomendacion/RecomendacionServicio.svc?xsd=xsd0" />
+    <MetadataFile FileName="RecomendacionServicio1.wsdl" MetadataType="Wsdl" ID="6fddc907-8ebe-4715-9e4c-2f1438421e78" SourceId="1" SourceUrl="http://localhost:5587/Recomendacion/RecomendacionServicio.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ServiciosWeb" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:5587/Catalogacion/InventarioServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="DInventario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Autor1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Autor2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Autor3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Edicion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Editor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdAdquisicion" type="ser:guid" />
+      <xs:element minOccurs="0" name="IdInventario" type="ser:guid" />
+      <xs:element minOccurs="0" name="IdLibro" type="ser:guid" />
+      <xs:element minOccurs="0" name="Idioma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Institucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Isbn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OtroTitulo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Prestado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Registro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Signatura" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DInventario" nillable="true" type="tns:DInventario" />
+  <xs:complexType name="DLibro">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ADQUISICION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AUTOR1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AUTOR2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AUTOR3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CIUDAD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COLACION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EDICION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EDITORA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FECHAPUBLICACION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GRADO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDIOMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_CIUDAD" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID_EDITORA" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID_GRADO" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID_IDIOMA" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID_INSTITUCION" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID_LIBRO" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID_TUTOR" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="INSTITUCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ISBN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOTAS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OTRO_CODIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OTRO_TITULO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RESUMEN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIGNATURA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPODEDOCUMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPOINVESTIGACION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPOREGISTRO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TITULO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TUTOR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VALORCORDOBA" type="xs:decimal" />
+      <xs:element minOccurs="0" name="VALORDOLAR" type="xs:decimal" />
+      <xs:element minOccurs="0" name="VALORORIGINAL" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DLibro" nillable="true" type="tns:DLibro" />
+  <xs:complexType name="ArrayOfDInventario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DInventario" nillable="true" type="tns:DInventario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDInventario" nillable="true" type="tns:ArrayOfDInventario" />
+</xs:schema>

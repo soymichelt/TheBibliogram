@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7fc76128-271d-43d3-9aa8-b49f13c653fb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5587/Otros/CiudadServicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CiudadServicio3.xsd" MetadataType="Schema" ID="bb5bf312-abfe-497f-b3de-1d27a9fce67b" SourceId="1" SourceUrl="http://localhost:5587/Otros/CiudadServicio.svc?xsd=xsd2" />
+    <MetadataFile FileName="CiudadServicio31.xsd" MetadataType="Schema" ID="3dc4f42c-7b62-462e-b47b-d69a3133acb8" SourceId="1" SourceUrl="http://localhost:5587/Otros/CiudadServicio.svc?xsd=xsd0" />
+    <MetadataFile FileName="CiudadServicio32.xsd" MetadataType="Schema" ID="01bc4e9e-56a4-47f2-a992-02217c15fd98" SourceId="1" SourceUrl="http://localhost:5587/Otros/CiudadServicio.svc?xsd=xsd1" />
+    <MetadataFile FileName="CiudadServicio1.disco" MetadataType="Disco" ID="ce7ccf86-0cfd-4aed-9e84-0bed4930faf1" SourceId="1" SourceUrl="http://localhost:5587/Otros/CiudadServicio.svc?disco" />
+    <MetadataFile FileName="CiudadServicio1.wsdl" MetadataType="Wsdl" ID="a6637286-4a03-45d0-976e-db3143be6f08" SourceId="1" SourceUrl="http://localhost:5587/Otros/CiudadServicio.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

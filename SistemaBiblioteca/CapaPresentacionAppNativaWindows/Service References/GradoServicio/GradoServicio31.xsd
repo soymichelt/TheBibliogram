@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ServiciosWeb" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:5587/Catalogacion/GradoServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="DGrado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdGrado" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DGrado" nillable="true" type="tns:DGrado" />
+  <xs:complexType name="ArrayOfDGrado">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DGrado" nillable="true" type="tns:DGrado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDGrado" nillable="true" type="tns:ArrayOfDGrado" />
+</xs:schema>

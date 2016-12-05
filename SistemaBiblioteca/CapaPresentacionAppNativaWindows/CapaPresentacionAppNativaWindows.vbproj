@@ -1,0 +1,894 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A08C720-DE61-4AAF-91E0-347FE02BFD16}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CapaPresentacionAppNativaWindows.My.MyApplication</StartupObject>
+    <RootNamespace>CapaPresentacionAppNativaWindows</RootNamespace>
+    <AssemblyName>CapaPresentacionAppNativaWindows</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CapaPresentacionAppNativaWindows.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CapaPresentacionAppNativaWindows.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Design, Version=4.4.0.0, Culture=neutral, PublicKeyToken=dc91bbef911870e2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ComponentFactory.Krypton.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Docking, Version=4.4.0.0, Culture=neutral, PublicKeyToken=dc91bbef911870e2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator, Version=4.4.0.0, Culture=neutral, PublicKeyToken=dc91bbef911870e2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.4.0.0, Culture=neutral, PublicKeyToken=dc91bbef911870e2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=dc91bbef911870e2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace, Version=4.4.0.0, Culture=neutral, PublicKeyToken=dc91bbef911870e2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Design, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation.Design, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.Instrumentation.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="itextsharp, Version=5.5.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Klik.Windows.Forms.EntryLib.V2.2008, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Klik.Windows.Forms.EntryLib.V2.2008.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Report\Recomendacion\rptListadoRecomendacion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptListadoRecomendacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service References\AccountServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CarreraServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CiudadServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PaisServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RecomendacionServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AccountSecurity\frmRegistrer.Designer.vb">
+      <DependentUpon>frmRegistrer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AccountSecurity\frmRegistrer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AccountSecurity\frmSignin.Designer.vb">
+      <DependentUpon>frmSignin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AccountSecurity\frmSignin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Adquisicion\frmAdquisicion.Designer.vb">
+      <DependentUpon>frmAdquisicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Adquisicion\frmAdquisicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Ciudad\frmBuscarCiudad.Designer.vb">
+      <DependentUpon>frmBuscarCiudad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ciudad\frmBuscarCiudad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Ciudad\frmCiudad.Designer.vb">
+      <DependentUpon>frmCiudad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ciudad\frmCiudad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Editor\frmEditor.Designer.vb">
+      <DependentUpon>frmEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Editor\frmEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Encabezado\frmEncabezado.Designer.vb">
+      <DependentUpon>frmEncabezado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Encabezado\frmEncabezado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Entrega\frmEntrega.Designer.vb">
+      <DependentUpon>frmEntrega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Entrega\frmEntrega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Grado\frmGrado.Designer.vb">
+      <DependentUpon>frmGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Grado\frmGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Idioma\frmIdioma.Designer.vb">
+      <DependentUpon>frmIdioma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Idioma\frmIdioma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Institucion\frmInstitucion.Designer.vb">
+      <DependentUpon>frmInstitucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Institucion\frmInstitucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Libro\frmBuscarLibro.Designer.vb">
+      <DependentUpon>frmBuscarLibro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Libro\frmBuscarLibro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Libro\frmLibro.Designer.vb">
+      <DependentUpon>frmLibro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Libro\frmLibro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Pais\frmBuscarPais.Designer.vb">
+      <DependentUpon>frmBuscarPais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pais\frmBuscarPais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Pais\frmPais.Designer.vb">
+      <DependentUpon>frmPais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pais\frmPais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Persona\frmBuscarPersona.Designer.vb">
+      <DependentUpon>frmBuscarPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Persona\frmBuscarPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Persona\frmPersona.Designer.vb">
+      <DependentUpon>frmPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Persona\frmPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Prestamo\frmBuscarPrestamo.Designer.vb">
+      <DependentUpon>frmBuscarPrestamo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Prestamo\frmBuscarPrestamo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Prestamo\frmPrestamo.Designer.vb">
+      <DependentUpon>frmPrestamo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Prestamo\frmPrestamo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Prestamo\frmSolvencia.Designer.vb">
+      <DependentUpon>frmSolvencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Prestamo\frmSolvencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Recomendacion\frmBuscarRecomendacion.Designer.vb">
+      <DependentUpon>frmBuscarRecomendacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Recomendacion\frmBuscarRecomendacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Recomendacion\frmRecomendacion.Designer.vb">
+      <DependentUpon>frmRecomendacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Recomendacion\frmRecomendacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tutor\frmTutor.Designer.vb">
+      <DependentUpon>frmTutor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tutor\frmTutor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\_Layout\frmCreditos.Designer.vb">
+      <DependentUpon>frmCreditos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\_Layout\frmCreditos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\_Layout\frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\_Layout\frmPrincipal.Designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service References\EditorServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\EncabezadoServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\GradoServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\IdiomaServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\InventarioServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LibroServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\InstitucionServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PersonaServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PrestamoServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="VarGlobales.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report\Recomendacion\rptListadoRecomendacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptListadoRecomendacion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AccountSecurity\frmRegistrer.resx">
+      <DependentUpon>frmRegistrer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AccountSecurity\frmSignin.resx">
+      <DependentUpon>frmSignin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Adquisicion\frmAdquisicion.resx">
+      <DependentUpon>frmAdquisicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Ciudad\frmBuscarCiudad.resx">
+      <DependentUpon>frmBuscarCiudad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Ciudad\frmCiudad.resx">
+      <DependentUpon>frmCiudad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Editor\frmEditor.resx">
+      <DependentUpon>frmEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Encabezado\frmEncabezado.resx">
+      <DependentUpon>frmEncabezado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Entrega\frmEntrega.resx">
+      <DependentUpon>frmEntrega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Grado\frmGrado.resx">
+      <DependentUpon>frmGrado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Idioma\frmIdioma.resx">
+      <DependentUpon>frmIdioma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Institucion\frmInstitucion.resx">
+      <DependentUpon>frmInstitucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Libro\frmBuscarLibro.resx">
+      <DependentUpon>frmBuscarLibro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Libro\frmLibro.resx">
+      <DependentUpon>frmLibro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pais\frmBuscarPais.resx">
+      <DependentUpon>frmBuscarPais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pais\frmPais.resx">
+      <DependentUpon>frmPais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Persona\frmBuscarPersona.resx">
+      <DependentUpon>frmBuscarPersona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Persona\frmPersona.resx">
+      <DependentUpon>frmPersona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Prestamo\frmBuscarPrestamo.resx">
+      <DependentUpon>frmBuscarPrestamo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Prestamo\frmPrestamo.resx">
+      <DependentUpon>frmPrestamo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Prestamo\frmSolvencia.resx">
+      <DependentUpon>frmSolvencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Recomendacion\frmBuscarRecomendacion.resx">
+      <DependentUpon>frmBuscarRecomendacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Recomendacion\frmRecomendacion.resx">
+      <DependentUpon>frmRecomendacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tutor\frmTutor.resx">
+      <DependentUpon>frmTutor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\_Layout\frmCreditos.resx">
+      <DependentUpon>frmCreditos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\_Layout\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AccountServicio\AccountServicio.wsdl" />
+    <None Include="Service References\AccountServicio\AccountServicio.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AccountServicio\AccountServicio1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AccountServicio\AccountServicio2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AccountServicio\CapaPresentacionAppNativaWindows.AccountServicio.DUsuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CarreraServicio\CapaPresentacionAppNativaWindows.CarreraServicio.DCarrera.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CarreraServicio\CarreraServicio1.wsdl" />
+    <None Include="Service References\CarreraServicio\CarreraServicio3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CarreraServicio\CarreraServicio31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CarreraServicio\CarreraServicio32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CiudadServicio\CapaPresentacionAppNativaWindows.CiudadServicio.DCiudad.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CiudadServicio\CiudadServicio1.wsdl" />
+    <None Include="Service References\CiudadServicio\CiudadServicio3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CiudadServicio\CiudadServicio31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CiudadServicio\CiudadServicio32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EditorServicio\CapaPresentacionAppNativaWindows.EditorServicio.DEditor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EditorServicio\EditorServicio1.wsdl" />
+    <None Include="Service References\EditorServicio\EditorServicio3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EditorServicio\EditorServicio31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EditorServicio\EditorServicio32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EncabezadoServicio\CapaPresentacionAppNativaWindows.EncabezadoServicio.DEncabezado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EncabezadoServicio\EncabezadoServicio1.wsdl" />
+    <None Include="Service References\EncabezadoServicio\EncabezadoServicio3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EncabezadoServicio\EncabezadoServicio31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EncabezadoServicio\EncabezadoServicio32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GradoServicio\CapaPresentacionAppNativaWindows.GradoServicio.DGrado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GradoServicio\GradoServicio1.wsdl" />
+    <None Include="Service References\GradoServicio\GradoServicio3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GradoServicio\GradoServicio31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GradoServicio\GradoServicio32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IdiomaServicio\CapaPresentacionAppNativaWindows.IdiomaServicio.DIdioma.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IdiomaServicio\IdiomaServicio1.wsdl" />
+    <None Include="Service References\IdiomaServicio\IdiomaServicio3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IdiomaServicio\IdiomaServicio31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IdiomaServicio\IdiomaServicio32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InstitucionServicio\CapaPresentacionAppNativaWindows.InstitucionServicio.DInstitucion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InstitucionServicio\InstitucionServicio1.wsdl" />
+    <None Include="Service References\InstitucionServicio\InstitucionServicio3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InstitucionServicio\InstitucionServicio31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InstitucionServicio\InstitucionServicio32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InventarioServicio\CapaPresentacionAppNativaWindows.InventarioServicio.DInventario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InventarioServicio\InventarioServicio1.wsdl" />
+    <None Include="Service References\InventarioServicio\InventarioServicio3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InventarioServicio\InventarioServicio31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InventarioServicio\InventarioServicio32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LibroServicio\CapaPresentacionAppNativaWindows.LibroServicio.DEncabezado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LibroServicio\CapaPresentacionAppNativaWindows.LibroServicio.DInventario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LibroServicio\CapaPresentacionAppNativaWindows.LibroServicio.DLibro.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LibroServicio\LibroServicio1.wsdl" />
+    <None Include="Service References\LibroServicio\LibroServicio3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LibroServicio\LibroServicio31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LibroServicio\LibroServicio32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaisServicio\CapaPresentacionAppNativaWindows.PaisServicio.DPais.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PaisServicio\PaisServicio1.wsdl" />
+    <None Include="Service References\PaisServicio\PaisServicio2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaisServicio\PaisServicio21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaisServicio\PaisServicio22.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PersonaServicio\CapaPresentacionAppNativaWindows.PersonaServicio.DPersona.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PersonaServicio\PersonaServicio1.wsdl" />
+    <None Include="Service References\PersonaServicio\PersonaServicio3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PersonaServicio\PersonaServicio31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PersonaServicio\PersonaServicio32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrestamoServicio\CapaPresentacionAppNativaWindows.PrestamoServicio.DDetallePrestamo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PrestamoServicio\CapaPresentacionAppNativaWindows.PrestamoServicio.DInventario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PrestamoServicio\CapaPresentacionAppNativaWindows.PrestamoServicio.DPrestamo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecomendacionServicio\RecomendacionServicio.wsdl" />
+    <None Include="Service References\RecomendacionServicio\RecomendacionServicio.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecomendacionServicio\RecomendacionServicio1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecomendacionServicio\RecomendacionServicio2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\DataSet.xsc">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Models\DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Models\DataSet.xss">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ComponentFactory.Krypton.Design.dll" />
+    <Content Include="bin\Debug\ComponentFactory.Krypton.Docking.dll" />
+    <Content Include="bin\Debug\ComponentFactory.Krypton.Navigator.dll" />
+    <Content Include="bin\Debug\ComponentFactory.Krypton.Ribbon.dll" />
+    <Content Include="bin\Debug\ComponentFactory.Krypton.Toolkit.dll" />
+    <Content Include="bin\Debug\ComponentFactory.Krypton.Workspace.dll" />
+    <Content Include="bin\Debug\DevComponents.DotNetBar.Design.dll" />
+    <Content Include="bin\Debug\DevComponents.DotNetBar2.dll" />
+    <Content Include="bin\Debug\DevComponents.Instrumentation.Design.dll" />
+    <Content Include="bin\Debug\DevComponents.Instrumentation.dll" />
+    <Content Include="bin\Debug\DevComponents.TreeGX.dll" />
+    <None Include="Service References\RecomendacionServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\RecomendacionServicio\configuration.svcinfo" />
+    <None Include="Service References\RecomendacionServicio\configuration91.svcinfo" />
+    <None Include="Service References\RecomendacionServicio\RecomendacionServicio.disco" />
+    <None Include="Service References\AccountServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\AccountServicio\configuration.svcinfo" />
+    <None Include="Service References\AccountServicio\configuration91.svcinfo" />
+    <None Include="Service References\AccountServicio\AccountServicio.disco" />
+    <None Include="Service References\PersonaServicio\PersonaServicio1.disco" />
+    <None Include="Service References\PrestamoServicio\PrestamoServicio1.disco" />
+    <None Include="Service References\PaisServicio\PaisServicio1.disco" />
+    <None Include="Service References\CiudadServicio\CiudadServicio1.disco" />
+    <None Include="Service References\CarreraServicio\CarreraServicio1.disco" />
+    <None Include="Service References\InventarioServicio\InventarioServicio1.disco" />
+    <None Include="Service References\InstitucionServicio\InstitucionServicio1.disco" />
+    <None Include="Service References\IdiomaServicio\IdiomaServicio1.disco" />
+    <None Include="Service References\GradoServicio\GradoServicio1.disco" />
+    <None Include="Service References\EncabezadoServicio\EncabezadoServicio1.disco" />
+    <None Include="Service References\EditorServicio\EditorServicio1.disco" />
+    <None Include="Service References\LibroServicio\LibroServicio1.disco" />
+    <None Include="Service References\PaisServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\PaisServicio\configuration.svcinfo" />
+    <None Include="Service References\PaisServicio\configuration91.svcinfo" />
+    <None Include="Service References\CiudadServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\CiudadServicio\configuration.svcinfo" />
+    <None Include="Service References\CiudadServicio\configuration91.svcinfo" />
+    <None Include="Service References\CarreraServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\CarreraServicio\configuration.svcinfo" />
+    <None Include="Service References\CarreraServicio\configuration91.svcinfo" />
+    <None Include="Service References\PersonaServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\PersonaServicio\configuration.svcinfo" />
+    <None Include="Service References\PersonaServicio\configuration91.svcinfo" />
+    <None Include="Service References\InventarioServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\InventarioServicio\configuration.svcinfo" />
+    <None Include="Service References\InventarioServicio\configuration91.svcinfo" />
+    <None Include="Service References\PrestamoServicio\PrestamoServicio1.wsdl" />
+    <None Include="Service References\PrestamoServicio\PrestamoServicio3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrestamoServicio\PrestamoServicio31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrestamoServicio\PrestamoServicio32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrestamoServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\PrestamoServicio\configuration.svcinfo" />
+    <None Include="Service References\PrestamoServicio\configuration91.svcinfo" />
+    <None Include="Service References\InstitucionServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\InstitucionServicio\configuration.svcinfo" />
+    <None Include="Service References\InstitucionServicio\configuration91.svcinfo" />
+    <None Include="Service References\EditorServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\EditorServicio\configuration.svcinfo" />
+    <None Include="Service References\EditorServicio\configuration91.svcinfo" />
+    <None Include="Service References\EncabezadoServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\EncabezadoServicio\configuration.svcinfo" />
+    <None Include="Service References\EncabezadoServicio\configuration91.svcinfo" />
+    <None Include="Service References\GradoServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\GradoServicio\configuration.svcinfo" />
+    <None Include="Service References\GradoServicio\configuration91.svcinfo" />
+    <None Include="Service References\IdiomaServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\IdiomaServicio\configuration.svcinfo" />
+    <None Include="Service References\IdiomaServicio\configuration91.svcinfo" />
+    <None Include="Service References\LibroServicio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\LibroServicio\configuration.svcinfo" />
+    <None Include="Service References\LibroServicio\configuration91.svcinfo" />
+    <None Include="bin\Debug\Imagenes\Fondo.png" />
+    <None Include="bin\Debug\Imagenes\Imprimir.png" />
+    <None Include="bin\Debug\Imagenes\Ciudad.png" />
+    <None Include="bin\Debug\Imagenes\Copias.png" />
+    <None Include="bin\Debug\Imagenes\FondoInicioSesion.jpg" />
+    <None Include="bin\Debug\Imagenes\FondoSesion.jpg" />
+    <None Include="bin\Debug\Imagenes\FondoSesionPass.jpg" />
+    <None Include="bin\Debug\Imagenes\Cancelar.png" />
+    <None Include="bin\Debug\Imagenes\ListadoUsuarios.png" />
+    <None Include="bin\Debug\Imagenes\EdicionUsuario.png" />
+    <None Include="bin\Debug\Imagenes\CerrarSesion.png" />
+    <None Include="bin\Debug\Imagenes\BusquedaPrestamos.png" />
+    <None Include="bin\Debug\Imagenes\BusquedaRecomendacion.png" />
+    <None Include="bin\Debug\Imagenes\Configuracion.png" />
+    <None Include="bin\Debug\Imagenes\CambiarPassword.png" />
+    <None Include="bin\Debug\Imagenes\Catalogo.png" />
+    <None Include="bin\Debug\Imagenes\Catalogo24x24.png" />
+    <None Include="bin\Debug\Imagenes\InformeBibliografia.png" />
+    <None Include="bin\Debug\Imagenes\InformePrestamo.png" />
+    <None Include="bin\Debug\Imagenes\InformeAcceso.png" />
+    <Content Include="bin\Debug\Imagenes\Icono.ico" />
+    <Content Include="bin\Debug\Imagenes\Logo.png" />
+    <Content Include="bin\Debug\Imagenes\logo_png.png" />
+    <None Include="bin\Debug\Imagenes\Salida.png" />
+    <None Include="bin\Debug\Imagenes\Entrada.png" />
+    <None Include="bin\Debug\Imagenes\Usuario.png" />
+    <None Include="bin\Debug\Imagenes\Hora.png" />
+    <None Include="bin\Debug\Imagenes\Fecha.png" />
+    <None Include="bin\Debug\Imagenes\Visitante.png" />
+    <None Include="bin\Debug\Imagenes\Tutor.png" />
+    <None Include="bin\Debug\Imagenes\Titulo.png" />
+    <None Include="bin\Debug\Imagenes\Reporte.png" />
+    <None Include="bin\Debug\Imagenes\Prestamos.png" />
+    <None Include="bin\Debug\Imagenes\Nuevo.png" />
+    <None Include="bin\Debug\Imagenes\Libro.png" />
+    <None Include="bin\Debug\Imagenes\Institucion.png" />
+    <None Include="bin\Debug\Imagenes\Idioma.png" />
+    <None Include="bin\Debug\Imagenes\Guardar.png" />
+    <None Include="bin\Debug\Imagenes\Grado.png" />
+    <None Include="bin\Debug\Imagenes\Encabezados.png" />
+    <None Include="bin\Debug\Imagenes\Eliminar.png" />
+    <None Include="bin\Debug\Imagenes\Editor.png" />
+    <None Include="bin\Debug\Imagenes\Editar.png" />
+    <None Include="bin\Debug\Imagenes\Cargar_24_24.png" />
+    <None Include="bin\Debug\Imagenes\Buscar.png" />
+    <None Include="bin\Debug\Imagenes\btn_buscar.png" />
+    <None Include="bin\Debug\Imagenes\btn_agregar.png" />
+    <None Include="bin\Debug\Imagenes\BorrarFiltro.png" />
+    <None Include="bin\Debug\Imagenes\Autor.png" />
+    <None Include="bin\Debug\Imagenes\AplicarFiltro.png" />
+    <None Include="bin\Debug\Imagenes\Actualizar_24_24.png" />
+    <None Include="bin\Debug\Imagenes\Actualizar_16_16.png" />
+    <None Include="bin\Debug\Imagenes\Pais.png" />
+    <None Include="bin\Debug\Imagenes\Volumen.png" />
+    <None Include="bin\Debug\Imagenes\Signin.png" />
+    <None Include="bin\Debug\Imagenes\Signout.png" />
+    <None Include="bin\Debug\Imagenes\Rol.png" />
+    <None Include="bin\Debug\Imagenes\Recomendacion.png" />
+    <None Include="bin\Debug\Imagenes\Solvencia.png" />
+    <None Include="bin\Debug\Imagenes\Salir.png" />
+    <Content Include="bin\Debug\itextsharp.dll" />
+    <Content Include="bin\Debug\Klik.Windows.Forms.EntryLib.V2.2008.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AccountServicio\" />
+    <WCFMetadataStorage Include="Service References\CarreraServicio\" />
+    <WCFMetadataStorage Include="Service References\CiudadServicio\" />
+    <WCFMetadataStorage Include="Service References\EditorServicio\" />
+    <WCFMetadataStorage Include="Service References\EncabezadoServicio\" />
+    <WCFMetadataStorage Include="Service References\GradoServicio\" />
+    <WCFMetadataStorage Include="Service References\IdiomaServicio\" />
+    <WCFMetadataStorage Include="Service References\InventarioServicio\" />
+    <WCFMetadataStorage Include="Service References\LibroServicio\" />
+    <WCFMetadataStorage Include="Service References\InstitucionServicio\" />
+    <WCFMetadataStorage Include="Service References\PaisServicio\" />
+    <WCFMetadataStorage Include="Service References\PersonaServicio\" />
+    <WCFMetadataStorage Include="Service References\PrestamoServicio\" />
+    <WCFMetadataStorage Include="Service References\RecomendacionServicio\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Salida\" />
+    <Folder Include="Views\_Report\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CarreraServicio" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:5587/Otros/CarreraServicio.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:5587/Otros/CarreraServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:5587/Otros/CarreraServicio.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICarreraServicio_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="ICarreraServicio_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarreraServicio_Lista_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista" />
+  </wsdl:message>
+  <wsdl:message name="ICarreraServicio_Lista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarreraServicio_Filtrar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Filtrar" />
+  </wsdl:message>
+  <wsdl:message name="ICarreraServicio_Filtrar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FiltrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarreraServicio_Guardar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Guardar" />
+  </wsdl:message>
+  <wsdl:message name="ICarreraServicio_Guardar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarreraServicio_BuscarPorNombre_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPorNombre" />
+  </wsdl:message>
+  <wsdl:message name="ICarreraServicio_BuscarPorNombre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPorNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarreraServicio_BuscarPorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPorId" />
+  </wsdl:message>
+  <wsdl:message name="ICarreraServicio_BuscarPorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPorIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICarreraServicio">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarreraServicio/DoWork" message="tns:ICarreraServicio_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarreraServicio/DoWorkResponse" message="tns:ICarreraServicio_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarreraServicio/Lista" message="tns:ICarreraServicio_Lista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarreraServicio/ListaResponse" message="tns:ICarreraServicio_Lista_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Filtrar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarreraServicio/Filtrar" message="tns:ICarreraServicio_Filtrar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarreraServicio/FiltrarResponse" message="tns:ICarreraServicio_Filtrar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Guardar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarreraServicio/Guardar" message="tns:ICarreraServicio_Guardar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarreraServicio/GuardarResponse" message="tns:ICarreraServicio_Guardar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPorNombre">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarreraServicio/BuscarPorNombre" message="tns:ICarreraServicio_BuscarPorNombre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarreraServicio/BuscarPorNombreResponse" message="tns:ICarreraServicio_BuscarPorNombre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarreraServicio/BuscarPorId" message="tns:ICarreraServicio_BuscarPorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarreraServicio/BuscarPorIdResponse" message="tns:ICarreraServicio_BuscarPorId_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICarreraServicio" type="tns:ICarreraServicio">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/ICarreraServicio/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista">
+      <soap:operation soapAction="http://tempuri.org/ICarreraServicio/Lista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Filtrar">
+      <soap:operation soapAction="http://tempuri.org/ICarreraServicio/Filtrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Guardar">
+      <soap:operation soapAction="http://tempuri.org/ICarreraServicio/Guardar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPorNombre">
+      <soap:operation soapAction="http://tempuri.org/ICarreraServicio/BuscarPorNombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPorId">
+      <soap:operation soapAction="http://tempuri.org/ICarreraServicio/BuscarPorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CarreraServicio">
+    <wsdl:port name="BasicHttpBinding_ICarreraServicio" binding="tns:BasicHttpBinding_ICarreraServicio">
+      <soap:address location="http://localhost:5587/Otros/CarreraServicio.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

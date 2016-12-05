@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3df6f4e4-5e9d-496b-ae76-b20a6cc8ec5a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5587/Prestamo/InformePrestamoServicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InformePrestamoServicio.wsdl" MetadataType="Wsdl" ID="12bfd644-1bd2-4a0f-bbe6-9fbc791c491b" SourceId="1" SourceUrl="http://localhost:5587/Prestamo/InformePrestamoServicio.svc?wsdl" />
+    <MetadataFile FileName="InformePrestamoServicio.xsd" MetadataType="Schema" ID="ebd9c0dd-2c50-482b-abd8-1ae6b154e766" SourceId="1" SourceUrl="http://localhost:5587/Prestamo/InformePrestamoServicio.svc?xsd=xsd2" />
+    <MetadataFile FileName="InformePrestamoServicio1.xsd" MetadataType="Schema" ID="736bf4a9-eb4d-4f97-8a9d-ffe74d3491fb" SourceId="1" SourceUrl="http://localhost:5587/Prestamo/InformePrestamoServicio.svc?xsd=xsd1" />
+    <MetadataFile FileName="InformePrestamoServicio.disco" MetadataType="Disco" ID="08ce3dbd-78de-49b8-8540-c166460aa202" SourceId="1" SourceUrl="http://localhost:5587/Prestamo/InformePrestamoServicio.svc?disco" />
+    <MetadataFile FileName="InformePrestamoServicio2.xsd" MetadataType="Schema" ID="bef4dc84-30f6-4aa1-9625-3819d54b427d" SourceId="1" SourceUrl="http://localhost:5587/Prestamo/InformePrestamoServicio.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

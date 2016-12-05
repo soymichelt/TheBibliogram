@@ -1,0 +1,29 @@
+﻿.nav-tabs-custom > .nav-tabs > li.active {
+    border-top-color:#00A65A;
+}
+
+.dividerx10 {
+    height:10px;
+}
+.dividerx20 {
+    height:20px;
+}
+.dividerx30 {
+    height:30px;
+}
+.dividerx40 {
+    height:40px;
+}
+
+.has-success .form-control, .has-success .form-control:focus {
+    border-color:#00A65A;
+}
+
+.label-theme {
+    font-size:12px;
+}
+
+thead, tfoot {
+    font-weight:bold;
+    font-size:12px;
+}

@@ -1,0 +1,41 @@
+﻿/*PRIEMRA VERSION DEL MENU*/
+.navs-sigin {
+    background-color: #F1F1F1;
+    /*background-color: #F9F9F9;*/
+    background-image: linear-gradient(0deg, #dfdfdf 0%,white 100%);
+    padding-top:10px;
+    padding-bottom:8px;
+    border-bottom:1px solid #ccc;
+}
+#logo-menu {
+    width: 150px;
+}
+.btn-login, .btn-register, .btn-menu {
+    background-color:transparent !important;
+    border-radius:50px 50px !important;
+}
+.btn-login {
+    color: #5cb85c !important;
+}
+.btn-register {
+    color: #f0ad4e !important;
+}
+.btn-menu {
+    color: #337ab7 !important;
+}
+.btn-login:hover{
+    background-color: rgba(92, 184, 92, 0.1) !important;
+    background: rgba(92, 184, 92, 0.1) !important;
+    border: solid 1px #4cae4c !important;
+}
+.btn-register:hover {
+    background-color: rgba(240, 173, 78, 0.1) !important;
+    background: rgba(240, 173, 78, 0.1) !important;
+    border:solid 1px #eea236 !important;
+}
+.btn-menu:hover {
+    background-color: rgba(51, 122, 183, 0.1) !important;
+    background: rgba(51, 122, 183, 0.1) !important;
+    border:solid 1px #337ab7 !important;
+    color:#337ab7 !important;
+}

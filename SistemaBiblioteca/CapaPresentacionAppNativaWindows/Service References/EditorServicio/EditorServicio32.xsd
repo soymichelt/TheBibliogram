@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ServiciosWeb" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiciosWeb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:5587/Catalogacion/EditorServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="DEditor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdEditor" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DEditor" nillable="true" type="tns:DEditor" />
+  <xs:complexType name="ArrayOfDEditor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DEditor" nillable="true" type="tns:DEditor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDEditor" nillable="true" type="tns:ArrayOfDEditor" />
+</xs:schema>

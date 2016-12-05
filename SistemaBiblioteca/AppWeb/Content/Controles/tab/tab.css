@@ -1,0 +1,14 @@
+﻿.tab {
+    color:#66bb6a;
+    font-size:14px;
+    text-transform:uppercase;
+    padding-bottom:10px;
+}
+    .tab:hover {
+        cursor:pointer;
+        color:#388e3c;
+    }
+.indicador {
+    height:2px;
+    background:#66bb6a;
+}
